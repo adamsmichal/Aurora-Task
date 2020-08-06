@@ -1,0 +1,39 @@
+.nav {
+  display: none;
+}
+
+@include media("m", min) {
+  .nav {
+    display: block;
+    margin-top: getSpace("l");
+
+    &__list {
+      font-size: 1rem;
+      text-transform: uppercase;
+
+      &-item {
+        &:hover {
+          color: getColor("pink");
+        }
+
+        &--color {
+          color: getColor("pink");
+
+          &:hover {
+            color: getColor("black");
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media("ml", min) {
+  .nav {
+    margin-top: getSpace("xl");
+
+    &__list {
+      font-size: 1.4rem;
+    }
+  }
+}
