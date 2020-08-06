@@ -21,6 +21,18 @@
 
     &-item {
       white-space: nowrap;
+
+      &:hover {
+        color: getColor("pink");
+      }
+
+      &--color {
+        color: getColor("pink");
+
+        &:hover {
+          color: getColor("black");
+        }
+      }
     }
   }
 }
@@ -42,20 +54,6 @@
       align-items: flex-start;
       padding: 0;
       font-size: 1rem;
-
-      &-item {
-        &:hover {
-          color: getColor("pink");
-        }
-
-        &--color {
-          color: getColor("pink");
-
-          &:hover {
-            color: getColor("black");
-          }
-        }
-      }
     }
   }
 }
