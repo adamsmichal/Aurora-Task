@@ -1,15 +1,47 @@
 .nav {
-  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: getColor("white");
+  transition: all 0.4s ease 0s;
+
+  &__list {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    overflow: hidden;
+    height: 100%;
+    padding: getSpace("l");
+    font-size: 2rem;
+    font-weight: getFontWeight("bold");
+    text-transform: uppercase;
+
+    &-item {
+      white-space: nowrap;
+    }
+  }
 }
 
 @include media("m", min) {
   .nav {
+    position: relative;
     display: block;
-    margin-top: getSpace("l");
+    height: 40px;
+    width: 100%;
+    max-width: 1290px;
+    margin: getSpace("l") auto;
+    padding: 0 getSpace("l");
 
     &__list {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 0;
       font-size: 1rem;
-      text-transform: uppercase;
 
       &-item {
         &:hover {
@@ -30,8 +62,6 @@
 
 @include media("ml", min) {
   .nav {
-    margin-top: getSpace("xl");
-
     &__list {
       font-size: 1.4rem;
     }
