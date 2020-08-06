@@ -4,7 +4,7 @@ Recruitment tasks for Aurora Creation
 
 In the project directory, you can run:
 
-### `npm intall`
+### `npm install`
 
 And then:
 
