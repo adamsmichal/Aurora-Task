@@ -5,15 +5,59 @@
     max-height: 31px;
   }
 
-  &__form-field {
-    display: none;
+  &__form {
+    &-field {
+      display: flex;
+      position: fixed;
+      width: 100vw;
+      height: 0;
+      top: 0;
+      left: 0;
+      background-color: rgba($color: getColor("white"), $alpha: 0.96);
+      z-index: getIndex("root");
+      transition: all 0.3s ease 0s;
+    }
+
+    &-input {
+      display: none;
+      height: 50px;
+      width: 90%;
+      border: none;
+      margin: getSpace("xs");
+      @include font-family("secondary");
+      border-bottom: 1px solid getColor("dark-gray", "all");
+      background: none;
+      transition: all 0.3s ease 0s;
+
+      &::placeholder {
+        color: getColor("gray");
+      }
+    }
+
+    &-exit {
+      display: none;
+      height: 40px;
+      font-size: 2rem;
+      border: none;
+      background: none;
+      color: getColor("black");
+      transition: all 0.3s ease 0s;
+    }
+
+    &-button {
+      display: none;
+    }
+
+    &-icon {
+      display: none;
+    }
   }
 
   &__menu {
-    height: 50px;
     align-items: center;
-    width: 200px;
     justify-content: space-around;
+    height: 50px;
+    width: 200px;
   }
 
   &__icon-container {
@@ -28,6 +72,13 @@
   &__basket {
     display: flex;
     align-items: flex-end;
+    transform: scale(1);
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      transform: scale(1.05);
+      transition: all 0.3s ease 0s;
+    }
 
     &-text {
       display: none;
@@ -132,25 +183,28 @@
 
     &__form {
       &-field {
-        display: flex;
+        position: relative;
         justify-content: space-between;
+        height: 40px;
         width: 40%;
+        padding: 0;
         margin-left: getSpace("xxxl");
         border-bottom: 1px solid getColor("dark-gray", "all");
       }
 
       &-input {
-        width: 90%;
+        display: block;
+        height: 40px;
+        margin: 0;
         border: none;
-        margin: getSpace("xs");
-        @include font-family("secondary");
+      }
 
-        &::placeholder {
-          color: getColor("gray");
-        }
+      &-exit {
+        display: none;
       }
 
       &-button {
+        display: inline-block;
         background: none;
         border: none;
 
@@ -160,6 +214,7 @@
       }
 
       &-icon {
+        display: inline-block;
         transform: scale(1);
         transition: transform 0.6s;
 
@@ -168,6 +223,10 @@
           transition: transform 0.6s;
         }
       }
+    }
+
+    &__icon-container {
+      display: none;
     }
 
     &__icon {

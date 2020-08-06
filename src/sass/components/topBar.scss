@@ -13,6 +13,13 @@
       display: flex;
       align-items: center;
       height: 40px;
+      transform: scale(1);
+      transition: all 0.2s ease 0s;
+
+      &:hover {
+        transform: scale(1.03);
+        transition: all 0.2s ease 0s;
+      }
 
       &--contact {
         justify-content: flex-start;
@@ -20,6 +27,11 @@
 
       &--user {
         border-left: 1px solid getColor("light-gray", "all");
+
+        &:hover {
+          transform: scale(1);
+          background-color: getColor("light-gray", "all");
+        }
 
         &:nth-child(2) {
           border-right: 1px solid getColor("light-gray", "all");
