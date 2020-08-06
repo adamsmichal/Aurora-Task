@@ -13,6 +13,133 @@
   </head>
 
   <body>
+    <header>
+      <div class="top-bar flex-center">
+        <div class="center-wrapper flex-between">
+          <ul class="top-bar__menu flex-between">
+            <li class="top-bar__element">
+              <a
+                class="top-bar__link top-bar__link--contact flex-center"
+                href="tel:+48293939098"
+              >
+                <img src="icons/phone-icon.svg" alt="phone-icon" />
+                <p class="top-bar__text">293 939 098</p>
+              </a>
+            </li>
+            <li class="top-bar__element">
+              <a
+                class="top-bar__link top-bar__link--contact flex-center"
+                href="mailto:kontakt@aurorabox.pl"
+              >
+                <img src="icons/mail-icon.svg" alt="mail-icon" />
+                <p class="top-bar__text">
+                  kontakt@aurorabox.pl
+                </p>
+              </a>
+            </li>
+          </ul>
+          <ul class="top-bar__menu flex-between">
+            <li class="top-bar__element top-bar__element--user">
+              <a class="top-bar__link flex-center" href="#">
+                <img src="icons/login-icon.svg" alt="lock-icon" />
+                <p class="top-bar__text">Zaloguj się</p>
+              </a>
+            </li>
+            <li class="top-bar__element top-bar__element--user">
+              <a class="top-bar__link flex-center" href="#">
+                <img src="icons/account-icon.png" alt="account-icon" />
+                <p class="top-bar__text">Załóż konto</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mid-bar flex-between center-wrapper">
+        <a href="#">
+          <img
+            class="mid-bar__logo"
+            src="images/logo-aurora-box.png"
+            alt="Aurora Box"
+          />
+        </a>
+
+        <div class="mid-bar__form-field">
+          <input
+            class="mid-bar__form-input"
+            type="text"
+            placeholder="Co chcesz kupić?"
+          />
+          <button class="mid-bar__form-button" type="submit">
+            <img
+              class="mid-bar__form-icon"
+              src="icons/lens-icon.svg"
+              alt="lens-icon"
+            />
+          </button>
+        </div>
+
+        <div class="mid-bar__menu flex-between">
+          <a href="#">
+            <img
+              class="mid-bar__icon"
+              src="icons/lens-icon.svg"
+              alt="lens-icon"
+            />
+          </a>
+
+          <a class="mid-bar__basket" href="#">
+            <img src="icons/basket-icon.svg" alt="basket-icon" />
+            <span class="mid-bar__basket-number">2</span>
+            <p class="mid-bar__basket-text">Twój koszyk</p>
+          </a>
+
+          <div class="mid-bar__burger">
+            <input
+              class="mid-bar__burger-input"
+              type="checkbox"
+              id="burger-btn"
+            />
+            <label class="mid-bar__burger-label" for="burger-btn">
+              <span class="mid-bar__burger-navicon"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <nav class="nav center-wrapper">
+        <ul class="nav__list flex-between">
+          <li>
+            <a class="nav__list-item" href="#">Kategorie</a>
+          </li>
+          <li>
+            <a class="nav__list-item" href="#">Nowości</a>
+          </li>
+          <li>
+            <a class="nav__list-item" href="#">Promocje</a>
+          </li>
+          <li>
+            <a class="nav__list-item nav__list-item--color" href="#"
+              >Wyprzedaże</a
+            >
+          </li>
+          <li>
+            <a class="nav__list-item" href="#">Kolekcje sezony</a>
+          </li>
+          <li>
+            <a class="nav__list-item" href="#">Nasza oferta</a>
+          </li>
+          <li>
+            <a class="nav__list-item" href="#">Trendy 2018</a>
+          </li>
+          <li>
+            <a class="nav__list-item" href="#">Blog</a>
+          </li>
+          <li>
+            <a class="nav__list-item" href="#">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <script src="main.bundle.js"></script>
   </body>
 </html>
