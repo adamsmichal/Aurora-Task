@@ -1,0 +1,27 @@
+.center-wrapper {
+  width: 100%;
+  max-width: 1290px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: getSpace("s");
+  padding-right: getSpace("s");
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@include media("s", min) {
+  .center-wrapper {
+    padding-left: getSpace("l");
+    padding-right: getSpace("l");
+  }
+}
