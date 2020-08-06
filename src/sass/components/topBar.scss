@@ -1,0 +1,43 @@
+.top-bar {
+  display: none;
+}
+
+@include media("m", min) {
+  .top-bar {
+    display: flex;
+    height: 40px;
+    border-bottom: 1px solid getColor("light-gray", "all");
+    font-size: 1.2rem;
+
+    &__element {
+      display: flex;
+      align-items: center;
+      height: 40px;
+
+      &--contact {
+        justify-content: flex-start;
+      }
+
+      &--user {
+        border-left: 1px solid getColor("light-gray", "all");
+
+        &:nth-child(2) {
+          border-right: 1px solid getColor("light-gray", "all");
+        }
+      }
+    }
+
+    &__link {
+      width: 150px;
+
+      &--contact {
+        width: 110px;
+        justify-content: flex-start;
+      }
+    }
+
+    &__text {
+      margin: 0 getSpace("s");
+    }
+  }
+}
