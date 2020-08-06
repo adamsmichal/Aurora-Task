@@ -1,0 +1,54 @@
+$breakpoints: (
+  "s": 430px,
+  "m": 720px,
+  "ml": 900px,
+  "l": 1248px,
+  "xl": 1440px,
+  "xxl": 1920px,
+);
+$colors-standard: (
+  "white": #fff,
+  "pink": #ecc7d0,
+  "purple": #ec3c73,
+  "gray": #a3a2a2,
+  "black": #000,
+);
+
+$colors-all: (
+  "light-gray": #d7d7d7,
+  "dark-gray": #191919,
+);
+
+$font-weights: (
+  "regular": 400,
+  "bold": 700,
+);
+
+$space-list: (
+  "xs": 8px,
+  "s": 12px,
+  "sm": 16px,
+  "m": 18px,
+  "ml": 25px,
+  "l": 36px,
+  "xl": 69px,
+  "xxl": 74px,
+  "xxxl": 100px,
+);
+
+$font-families: (
+  "primary": "Lato",
+  "secondary": "Helvetica",
+);
+
+$z-indexes: (
+  "hide": -1,
+  "normal": 0,
+  "over": 1,
+  "ui": 10,
+  "root": 1000,
+);
+
+$grid-cols: 12;
+$border-style: 1px solid getColor("6");
+$border-radius: 23px;

@@ -1,0 +1,23 @@
+@function getColor($name, $group: "standard") {
+  @if $group == "standard" {
+    @return map-get($map: $colors-standard, $key: $name);
+  } @else if $group == "all" {
+    @return map-get($map: $colors-all, $key: $name);
+  }
+}
+
+@function getFontWeight($name) {
+  @return map-get($map: $font-weights, $key: $name);
+}
+
+@function getSpace($name) {
+  @return map-get($map: $space-list, $key: $name);
+}
+
+@function getContainer($name) {
+  @return map-get($map: $container-list, $key: $name);
+}
+
+@function getIndex($name) {
+  @return map-get($map: $z-indexes, $key: $name);
+}
